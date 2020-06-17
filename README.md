@@ -6,7 +6,7 @@
 
 # 细分思维导图
 
-![思维导图学前端-javascript对象篇](https://github.com/cumt-robin/mindmap-fe/blob/master/Javascript对象篇)
+[思维导图学前端-javascript对象篇](https://github.com/cumt-robin/mindmap-fe/blob/master/Javascript对象篇)
 
 # License
 
