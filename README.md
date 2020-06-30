@@ -4,9 +4,11 @@
 
 ![前端知识树](https://qncdn.wbjiang.cn/%E5%89%8D%E7%AB%AF%E7%9F%A5%E8%AF%86%E6%A0%9120200617.png)
 
-# 细分思维导图
+# 思维导图
 
-[思维导图学前端-javascript对象篇](https://github.com/cumt-robin/mindmap-fe/blob/master/Javascript对象篇)
+[思维导图学前端-javascript对象](https://github.com/cumt-robin/mindmap-fe/blob/master/Javascript/Javascript对象)
+
+[思维导图学前端-正则表达式](https://github.com/cumt-robin/mindmap-fe/blob/master/Javascript/正则表达式)
 
 # License
 
