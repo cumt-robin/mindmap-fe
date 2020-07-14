@@ -2,7 +2,7 @@
 
 用思维导图的方式重新学习前端
 
-![前端知识树](https://qncdn.wbjiang.cn/%E5%89%8D%E7%AB%AF%E7%9F%A5%E8%AF%86%E6%A0%9120200617.png)
+![前端知识树](http://qncdn.wbjiang.cn/%E5%89%8D%E7%AB%AF%E7%9F%A5%E8%AF%86%E6%A0%9120200617.png)
 
 # 思维导图
 
