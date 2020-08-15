@@ -10,12 +10,14 @@
 
 [思维导图学前端-正则表达式](https://github.com/cumt-robin/mindmap-fe/blob/master/Javascript/正则表达式)
 
+[思维导图学前端-正则表达式](https://github.com/cumt-robin/mindmap-fe/blob/master/Javascript/函数)
+
 # License
 
 [MIT](https://github.com/cumt-robin/mindmap-fe/blob/master/LICENSE) © cumt-robin
 
 # 交流
 
-欢迎加我微信交流
+欢迎加我微信`laobaife`交流。技术会友，闲聊亦可！
 
-![关注&交流](http://qncdn.wbjiang.cn/%E5%A4%A7%E5%89%8D%E7%AB%AF%E5%85%AC%E4%BC%97%E5%8F%B7%E5%90%8D%E7%89%87.png)
+![公众号-大前端技术沙龙](http://qncdn.wbjiang.cn/%E5%A4%A7%E5%89%8D%E7%AB%AF%E5%85%AC%E4%BC%97%E5%8F%B7%E5%90%8D%E7%89%87.png)
