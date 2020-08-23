@@ -1,3 +1,4 @@
+// 单参柯里化
 function curry(fn, firstArg) {
   // 返回一个新函数
   return function() {
@@ -8,6 +9,7 @@ function curry(fn, firstArg) {
   }
 }
 
+// 灵活参数柯里化
 function curry(fn) {
   // 保存预置参数
   var presetArgs = [].slice.call(arguments, 1)
@@ -20,6 +22,7 @@ function curry(fn) {
   }
 }
 
+// 支持基本的多次柯里化
 function curry(fn) {
   // 获取原函数的参数长度
   const argLen = fn.length;
@@ -40,6 +43,7 @@ function curry(fn) {
   }
 }
 
+// 无限柯里化
 function curry(fn) {
   // 保存预置参数
   const presetArgs = [].slice.call(arguments, 1)
