@@ -2,23 +2,69 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=330">
+    <!-- 1倍scale，这个时候会出现溢出，出现滚动条 -->
+    <!-- <meta name="viewport" content="initial-scale=1.0,user-scalable=no" /> -->
+    <!-- 0.5倍scale，750的div放在375的屏幕上刚刚好，不会发生溢出，没有滚动条，1px的边框也能有0.5px的效果 -->
+    <!-- <meta name="viewport" content="initial-scale=0.5,user-scalable=no" /> -->
     <title>Document</title>
 </head>
 <style>
+    html {
+        height: 100%;
+    }
     body {
         margin: 0;
-    }
-    /* html {
-        width: 100%;
         height: 100%;
-    } */
+    }
+    .outer {
+        background-color: #f1e9e9;
+        height: 100%;
+    }
+    .inner {
+        position: absolute;
+        top: 100px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 200px;
+        height: 200px;
+        font-size: 50px;
+        background-color: white;
+        border: 1px solid #333;
+    }
+    [data-dpr="2"] .inner {
+        top: 200px;
+        width: 400px;
+        height: 400px;
+        font-size: 100px;
+    }
+    [data-dpr="3"] .inner {
+        top: 300px;
+        width: 600px;
+        height: 600px;
+        font-size: 150px;
+    }
+    /* 怎么写媒体查询，我懵逼了？ */
+    @media screen and (max-width: 1000px) {
+        .inner {
+            font-weight: bold;
+        } 
+    }
 </style>
 <body>
-    <div style="background-color: red;width: 500px;height: 1000px;font-size: 20px;">
-        <span style="font-size: 1.5em;line-height: 2em;">3242423</span>
+    <div class="outer">
+        <div class="inner">
+            inner
+        </div>
     </div>
     <script>
+        var dpr = window.devicePixelRatio;
+        var scale = 1 / dpr;
+        var metaEl = document.createElement('meta');
+        metaEl.setAttribute('name', 'viewport');
+        metaEl.setAttribute('content', 'initial-scale=' + scale + ', maximum-scale=' + scale + ', minimum-scale=' + scale + ', user-scalable=no');
+        document.querySelector('head').appendChild(metaEl);
+        // 考虑到div等dom整体大小被缩放的问题，引入了data-dpr，并结合属性选择器，这成了早期适配多设备的方案
+        document.body.setAttribute('data-dpr', dpr)
         alert(document.documentElement.clientWidth + ', ' + window.innerWidth)
     </script>
 </body>
