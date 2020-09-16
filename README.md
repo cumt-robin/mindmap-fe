@@ -6,11 +6,12 @@
 
 # 思维导图
 
-[思维导图学前端-javascript对象](https://github.com/cumt-robin/mindmap-fe/blob/master/Javascript/Javascript对象)
+- [x] javascript对象
+- [x] 正则表达式
+- [x] 函数
+- [ ] ES6
+- [ ] Vue
 
-[思维导图学前端-正则表达式](https://github.com/cumt-robin/mindmap-fe/blob/master/Javascript/正则表达式)
-
-[思维导图学前端-函数](https://github.com/cumt-robin/mindmap-fe/blob/master/Javascript/函数)
 
 # License
 
