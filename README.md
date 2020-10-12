@@ -11,7 +11,11 @@
 - [x] 函数
 - [ ] ES6
 - [ ] Vue
-
+- [ ] Babel
+- [ ] CI/CD
+- [ ] Formatting & Linters
+- [ ] Git分支管理&版本控制
+- [ ] 算法和数据结构
 
 # License
 
@@ -21,4 +25,4 @@
 
 欢迎加我微信`laobaife`交流。技术会友，闲聊亦可！
 
-![公众号-大前端技术沙龙](http://qncdn.wbjiang.cn/%E5%A4%A7%E5%89%8D%E7%AB%AF%E5%85%AC%E4%BC%97%E5%8F%B7%E5%90%8D%E7%89%87.png)
+![公众号-前端司南](https://qncdn.wbjiang.cn/%E5%89%8D%E7%AB%AF%E5%8F%B8%E5%8D%97%E5%90%8D%E7%89%87%E5%B8%A6%E5%BE%AE%E4%BF%A1.png)
