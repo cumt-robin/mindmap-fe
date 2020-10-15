@@ -23,11 +23,11 @@
 
 ## javascript
 
-- [「思维导图学前端 」初中级前端值得收藏的正则表达式知识点扫盲](https://github.com/cumt-robin/mindmap-fe/blob/master/posts/mysql/posts/javascript/regexp.md)
+- [「思维导图学前端 」初中级前端值得收藏的正则表达式知识点扫盲](https://github.com/cumt-robin/mindmap-fe/blob/master/posts/javascript/regexp.md)
 
 ## MySQL
 
-- [记一次Navicat for MySQL 10060错误的解决过程](https://github.com/cumt-robin/mindmap-fe/blob/master/posts/mysql/posts/mysql/mysql_10060_error.md)
+- [记一次Navicat for MySQL 10060错误的解决过程](https://github.com/cumt-robin/mindmap-fe/blob/master/posts/mysql/mysql_10060_error.md)
 
 # License
 
