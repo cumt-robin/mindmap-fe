@@ -1,14 +1,3 @@
----
-title: 记一次Navicat for MySQL 10060错误的解决过程
-tags:
-  - mysql
-  - navicat for mysql
-thumbnail: https://s1.ax1x.com/2020/03/17/8NIffK.png
-keywords: 'mysql,蒋文斌,Tusi,博客,前端,全栈,微信小程序'
-date: 2020-03-17 15:37:54
-categories: msyql
----
-
 最近加班挺多，所以也好久没远程访问自己云服务器上的`MySQL`数据库了。今天本地启动`Node`服务时连不上`MySQL`，照常用`Navicat For MySQL`连接远程数据库进行检查，结果发现突然报错了。
 
 <!-- more -->

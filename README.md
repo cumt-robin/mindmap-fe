@@ -23,11 +23,17 @@
 
 ## javascript
 
+- [then, catch, finally如何影响返回的Promise实例状态](https://github.com/cumt-robin/mindmap-fe/blob/master/posts/javascript/promise_then_catch_finally.md)
+- [彻底搞懂闭包，柯里化，手写代码，金九银十不再丢分！](https://github.com/cumt-robin/mindmap-fe/blob/master/posts/javascript/function.md)
 - [「思维导图学前端 」初中级前端值得收藏的正则表达式知识点扫盲](https://github.com/cumt-robin/mindmap-fe/blob/master/posts/javascript/regexp.md)
 
 ## MySQL
 
 - [记一次Navicat for MySQL 10060错误的解决过程](https://github.com/cumt-robin/mindmap-fe/blob/master/posts/mysql/mysql_10060_error.md)
+
+## Nginx
+
+- [从部署上做到前后端分离](https://github.com/cumt-robin/mindmap-fe/blob/master/posts/nginx/从部署上做到前后端分离.md)
 
 # License
 
