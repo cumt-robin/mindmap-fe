@@ -25,6 +25,9 @@
 
 - [then, catch, finally如何影响返回的Promise实例状态](https://github.com/cumt-robin/mindmap-fe/blob/master/posts/javascript/promise_then_catch_finally.md)
 - [彻底搞懂闭包，柯里化，手写代码，金九银十不再丢分！](https://github.com/cumt-robin/mindmap-fe/blob/master/posts/javascript/function.md)
+- [解读闭包，这次从ECMAScript词法环境，执行上下文说起](https://github.com/cumt-robin/mindmap-fe/blob/master/posts/javascript/closure.md)
+- [写给自己的Object和Function的3个灵魂拷问](https://github.com/cumt-robin/mindmap-fe/blob/master/posts/javascript/写给自己的Object和Function的3个灵魂拷问.md)
+- [面试官真的会问：new的实现以及无new实例化](https://github.com/cumt-robin/mindmap-fe/blob/master/posts/javascript/new.md)
 - [「思维导图学前端 」初中级前端值得收藏的正则表达式知识点扫盲](https://github.com/cumt-robin/mindmap-fe/blob/master/posts/javascript/regexp.md)
 
 ## MySQL
@@ -33,6 +36,7 @@
 
 ## Nginx
 
+- [「前端必看」这篇Nginx反向代理技巧，助你准时下班陪女神](https://github.com/cumt-robin/mindmap-fe/blob/master/posts/nginx/nginx本地域名和代理技巧.md)
 - [从部署上做到前后端分离](https://github.com/cumt-robin/mindmap-fe/blob/master/posts/nginx/从部署上做到前后端分离.md)
 
 # License
