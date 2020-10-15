@@ -21,6 +21,11 @@
 
 下面是我自己写的一些知识点总结和博客，都是自己一点一滴的积累，会一直坚持下去，希望对大家也有所帮助！
 
+如果文章中图片访问异常，一般是墙的问题，如果是国内网络，可以戳下面的博客链接看这些文章哦！
+
+- [我的掘金博客主页](https://juejin.im/user/2752832847753085/posts)
+- [我的个人博客](http://hexo.wbjiang.cn/)
+
 ## javascript
 
 - [then, catch, finally如何影响返回的Promise实例状态](https://github.com/cumt-robin/mindmap-fe/blob/master/posts/javascript/promise_then_catch_finally.md)
@@ -38,6 +43,11 @@
 
 - [「前端必看」这篇Nginx反向代理技巧，助你准时下班陪女神](https://github.com/cumt-robin/mindmap-fe/blob/master/posts/nginx/nginx本地域名和代理技巧.md)
 - [从部署上做到前后端分离](https://github.com/cumt-robin/mindmap-fe/blob/master/posts/nginx/从部署上做到前后端分离.md)
+
+## 数据结构&算法
+
+- [妙用数组fill处理每日温度](https://github.com/cumt-robin/mindmap-fe/blob/master/posts/数据结构和算法/妙用数组fill处理每日温度.md)
+- [回文数的两种解法](https://github.com/cumt-robin/mindmap-fe/blob/master/posts/数据结构和算法/回文数的两种解法.md)
 
 # License
 
