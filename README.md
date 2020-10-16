@@ -38,11 +38,32 @@
 - [千万别小看这些运算符背后的逻辑](https://github.com/cumt-robin/mindmap-fe/blob/master/posts/javascript/千万别小看这些运算符背后的逻辑.md)
 - [关于数据类型的一些小疑惑](https://github.com/cumt-robin/mindmap-fe/blob/master/posts/javascript/关于数据类型的一些小疑惑.md)
 - [js数据类型很简单，却也不简单](https://github.com/cumt-robin/mindmap-fe/blob/master/posts/javascript/js数据类型很简单，却也不简单.md)
+- [前端API层架构，也许你做得还不够](https://github.com/cumt-robin/mindmap-fe/blob/master/posts/javascript/前端API层架构，也许你做得还不够.md)
+- [用初中数学知识撸一个canvas环形进度条](https://github.com/cumt-robin/mindmap-fe/blob/master/posts/javascript/前端API层架构，也许你做得还不够.md)
+
+## Babel
+
+- [入门babel，我们需要了解些什么](https://github.com/cumt-robin/mindmap-fe/blob/master/posts/babel/入门babel，我们需要了解些什么.md)
+
+## 小程序
+
+- [共克时疫，https+小程序为“战疫”献上一份技术力量](https://github.com/cumt-robin/mindmap-fe/blob/master/posts/小程序/https+小程序为战疫献上一份技术力量.md)
 
 ## Git
 
 - [从亲身经历谈谈如何用Git分支解决项目生产实践中的痛点](https://github.com/cumt-robin/mindmap-fe/blob/master/posts/Git/从亲身经历谈谈如何用Git分支解决项目生产实践中的痛点.md)
 - [前端小微团队的gitlab实践](https://github.com/cumt-robin/mindmap-fe/blob/master/posts/Git/前端小微团队的gitlab实践.md)
+- [Git多个远程仓库不同步时的补救办法](https://github.com/cumt-robin/mindmap-fe/blob/master/posts/Git/Git多个远程仓库不同步时的补救办法.md)
+- [解决办公IP变化后git无法推送远程仓库的问题](https://github.com/cumt-robin/mindmap-fe/blob/master/posts/Git/解决办公IP变化后git无法推送远程仓库的问题.md)
+
+## CD/CD
+
+- [前端自动化部署的深度实践](https://github.com/cumt-robin/mindmap-fe/blob/master/posts/CI&CD/前端自动化部署的深度实践.md)
+- [自动化部署的一小步，前端搬砖的一大步](https://github.com/cumt-robin/mindmap-fe/blob/master/posts/CI&CD/自动化部署的一小步，前端搬砖的一大步.md)
+
+## 设计模式
+
+- [从一道面试题简单谈谈发布订阅和观察者模式](https://github.com/cumt-robin/mindmap-fe/blob/master/posts/设计模式/从一道面试题简单谈谈发布订阅和观察者模式.md)
 
 ## MySQL
 
