@@ -34,6 +34,15 @@
 - [写给自己的Object和Function的3个灵魂拷问](https://github.com/cumt-robin/mindmap-fe/blob/master/posts/javascript/写给自己的Object和Function的3个灵魂拷问.md)
 - [面试官真的会问：new的实现以及无new实例化](https://github.com/cumt-robin/mindmap-fe/blob/master/posts/javascript/new.md)
 - [「思维导图学前端 」初中级前端值得收藏的正则表达式知识点扫盲](https://github.com/cumt-robin/mindmap-fe/blob/master/posts/javascript/regexp.md)
+- [「思维导图学前端 」6k字一文搞懂Javascript对象，原型，继承](https://github.com/cumt-robin/mindmap-fe/blob/master/posts/javascript/object.md)
+- [千万别小看这些运算符背后的逻辑](https://github.com/cumt-robin/mindmap-fe/blob/master/posts/javascript/千万别小看这些运算符背后的逻辑.md)
+- [关于数据类型的一些小疑惑](https://github.com/cumt-robin/mindmap-fe/blob/master/posts/javascript/关于数据类型的一些小疑惑.md)
+- [js数据类型很简单，却也不简单](https://github.com/cumt-robin/mindmap-fe/blob/master/posts/javascript/js数据类型很简单，却也不简单.md)
+
+## Git
+
+- [从亲身经历谈谈如何用Git分支解决项目生产实践中的痛点](https://github.com/cumt-robin/mindmap-fe/blob/master/posts/Git/从亲身经历谈谈如何用Git分支解决项目生产实践中的痛点.md)
+- [前端小微团队的gitlab实践](https://github.com/cumt-robin/mindmap-fe/blob/master/posts/Git/前端小微团队的gitlab实践.md)
 
 ## MySQL
 
@@ -48,6 +57,10 @@
 
 - [妙用数组fill处理每日温度](https://github.com/cumt-robin/mindmap-fe/blob/master/posts/数据结构和算法/妙用数组fill处理每日温度.md)
 - [回文数的两种解法](https://github.com/cumt-robin/mindmap-fe/blob/master/posts/数据结构和算法/回文数的两种解法.md)
+
+## 自媒体
+
+- [入坑自媒体写作，我有干货与你分享](https://github.com/cumt-robin/mindmap-fe/blob/master/posts/自媒体/入坑自媒体写作，我有干货与你分享.md)
 
 # License
 
