@@ -26,6 +26,10 @@
 - [我的掘金博客主页](https://juejin.im/user/2752832847753085/posts)
 - [我的个人博客](http://hexo.wbjiang.cn/)
 
+扫一扫下方小程序码或搜索`Tusi博客`，即刻阅读最新文章！
+
+![Tusi博客](http://qncdn.wbjiang.cn/Tusi%E5%8D%9A%E5%AE%A2.jpg)
+
 ## javascript
 
 - [then, catch, finally如何影响返回的Promise实例状态](https://github.com/cumt-robin/mindmap-fe/blob/master/posts/javascript/promise_then_catch_finally.md)
@@ -40,6 +44,36 @@
 - [js数据类型很简单，却也不简单](https://github.com/cumt-robin/mindmap-fe/blob/master/posts/javascript/js数据类型很简单，却也不简单.md)
 - [前端API层架构，也许你做得还不够](https://github.com/cumt-robin/mindmap-fe/blob/master/posts/javascript/前端API层架构，也许你做得还不够.md)
 - [用初中数学知识撸一个canvas环形进度条](https://github.com/cumt-robin/mindmap-fe/blob/master/posts/javascript/前端API层架构，也许你做得还不够.md)
+- [如何判断IE OCX插件正常安装？](https://github.com/cumt-robin/mindmap-fe/blob/master/posts/javascript/如何判断IE插件正常安装.md)
+- [可能是最详细的UMD模块入门指南](https://github.com/cumt-robin/mindmap-fe/blob/master/posts/javascript/可能是最详细的UMD模块入门指南.md)
+- [sea.js的同步魔法](https://github.com/cumt-robin/mindmap-fe/blob/master/posts/javascript/seajs的同步魔法.md)
+- [一种在地图中处理曲线的通用方法](https://github.com/cumt-robin/mindmap-fe/blob/master/posts/javascript/一种在地图中处理曲线的通用方法.md)
+
+## HTML
+
+- [即将是史上最全的meta大全](https://github.com/cumt-robin/mindmap-fe/blob/master/posts/HTML/即将是史上最全的meta大全.md)
+- [前端攻城狮HTML5自查手册](https://github.com/cumt-robin/mindmap-fe/blob/master/posts/HTML/前端攻城狮HTML5自查手册.md)
+
+## CSS
+
+- [耐人寻味的CSS属性font-family](https://github.com/cumt-robin/mindmap-fe/blob/master/posts/CSS/耐人寻味的CSS属性font-family.md)
+- [耐人寻味的CSS属性white-space](https://github.com/cumt-robin/mindmap-fe/blob/master/posts/CSS/耐人寻味的CSS属性white-space.md)
+- [块级元素和行内元素](https://github.com/cumt-robin/mindmap-fe/blob/master/posts/CSS/块级元素和行内元素.md)
+
+## Vue
+
+- [vue项目中引入iconfont](https://github.com/cumt-robin/mindmap-fe/blob/master/posts/Vue/vue项目中引入iconfont.md)
+- [vue全家桶版本升级排错](https://github.com/cumt-robin/mindmap-fe/blob/master/posts/Vue/vue全家桶版本升级排错.md)
+- [vue作用域插槽，你真的懂了吗](https://github.com/cumt-robin/mindmap-fe/blob/master/posts/Vue/vue作用域插槽你真的懂了吗.md)
+
+## 移动端
+
+- [Chrome远程调试手机端UC浏览器](https://github.com/cumt-robin/mindmap-fe/blob/master/posts/移动端/Chrome远程调试手机端UC浏览器.md)
+
+## Webpack
+
+- [webpack4平滑升级](https://github.com/cumt-robin/mindmap-fe/blob/master/posts/Webpack/webpack4平滑升级.md)
+- [一张图带你了解webpack的require.context](https://github.com/cumt-robin/mindmap-fe/blob/master/posts/Webpack/一张图带你了解webpack的requirecontext.md)
 
 ## Babel
 
@@ -48,6 +82,21 @@
 ## 小程序
 
 - [共克时疫，https+小程序为“战疫”献上一份技术力量](https://github.com/cumt-robin/mindmap-fe/blob/master/posts/小程序/https+小程序为战疫献上一份技术力量.md)
+- [微信小程序自定义tabBar](https://github.com/cumt-robin/mindmap-fe/blob/master/posts/小程序/微信小程序自定义tabBar.md)
+
+## Hybrid
+
+- [ionic初体验](https://github.com/cumt-robin/mindmap-fe/blob/master/posts/Hybrid/ionic初体验.md)
+- [cordova开发环境搭建](https://github.com/cumt-robin/mindmap-fe/blob/master/posts/Hybrid/cordova开发环境搭建.md)
+- [gradle环境搭建](https://github.com/cumt-robin/mindmap-fe/blob/master/posts/Hybrid/gradle环境搭建.md)
+
+## NodeJS
+
+- [让Nodejs支持HTML5 History模式](https://github.com/cumt-robin/mindmap-fe/blob/master/posts/NodeJS/让Nodejs支持History模式.md)
+
+## npm
+
+- [发布一个简单的npm包](https://github.com/cumt-robin/mindmap-fe/blob/master/posts/npm/发布一个简单的npm包.md)
 
 ## Git
 
@@ -55,6 +104,7 @@
 - [前端小微团队的gitlab实践](https://github.com/cumt-robin/mindmap-fe/blob/master/posts/Git/前端小微团队的gitlab实践.md)
 - [Git多个远程仓库不同步时的补救办法](https://github.com/cumt-robin/mindmap-fe/blob/master/posts/Git/Git多个远程仓库不同步时的补救办法.md)
 - [解决办公IP变化后git无法推送远程仓库的问题](https://github.com/cumt-robin/mindmap-fe/blob/master/posts/Git/解决办公IP变化后git无法推送远程仓库的问题.md)
+- [Gerrit常见命令及最佳实践](https://github.com/cumt-robin/mindmap-fe/blob/master/posts/Git/Gerrit常见命令及最佳实践.md)
 
 ## CD/CD
 
@@ -68,6 +118,8 @@
 ## MySQL
 
 - [记一次Navicat for MySQL 10060错误的解决过程](https://github.com/cumt-robin/mindmap-fe/blob/master/posts/mysql/mysql_10060_error.md)
+- [CentOS7系统下修改mysql8.0版本密码](https://github.com/cumt-robin/mindmap-fe/blob/master/posts/mysql/CentOS7系统下修改mysql8版本密码.md)
+- [CentOS7系统下安装mysql8.0.13版本](https://github.com/cumt-robin/mindmap-fe/blob/master/posts/mysql/CentOS7系统下安装mysql8版本.md)
 
 ## Nginx
 
@@ -78,6 +130,15 @@
 
 - [妙用数组fill处理每日温度](https://github.com/cumt-robin/mindmap-fe/blob/master/posts/数据结构和算法/妙用数组fill处理每日温度.md)
 - [回文数的两种解法](https://github.com/cumt-robin/mindmap-fe/blob/master/posts/数据结构和算法/回文数的两种解法.md)
+
+## Linux
+
+- [在Linux和Windows系统中输出目录结构](https://github.com/cumt-robin/mindmap-fe/blob/master/posts/Linux/在Linux和Windows系统中输出目录结构.md)
+- [ubuntu系统下sudo权限用户安装nodejs和nginx](https://github.com/cumt-robin/mindmap-fe/blob/master/posts/Linux/ubuntu系统下sudo权限用户安装nodejs和nginx.md)
+
+## 编辑器
+
+- [VSCode缩进方式转换](https://github.com/cumt-robin/mindmap-fe/blob/master/posts/编辑器/VSCode缩进方式转换.md)
 
 ## 自媒体
 
