@@ -1,3 +1,10 @@
+/*
+ * @Author: 蒋文斌
+ * @Date: 2021-03-12 08:41:48
+ * @LastEditors: 蒋文斌
+ * @LastEditTime: 2021-03-12 21:33:09
+ * @Description: 自动生成
+ */
 
 // https://leetcode-cn.com/problems/kth-node-from-end-of-list-lcci/
 
@@ -15,11 +22,11 @@
  * @return {number}
  */
 var kthToLast = function(head, k) {
-    var nextNode = head.next;
-    var len = 1;
-    while(nextNode) {
+    var curr = head;
+    var len = 0;
+    while(curr !== null) {
         len++;
-        nextNode = nextNode.next;
+        curr = curr.next;
     }
     var i = 1;
     var targetNode = head;
