@@ -32,6 +32,7 @@
 
 ## javascript
 
+- [我以为我很懂Promise，直到我开始实现Promise/A+规范](https://github.com/cumt-robin/mindmap-fe/blob/master/posts/javascript/promiseaplus.md)
 - [then, catch, finally如何影响返回的Promise实例状态](https://github.com/cumt-robin/mindmap-fe/blob/master/posts/javascript/promise_then_catch_finally.md)
 - [彻底搞懂闭包，柯里化，手写代码，金九银十不再丢分！](https://github.com/cumt-robin/mindmap-fe/blob/master/posts/javascript/function.md)
 - [解读闭包，这次从ECMAScript词法环境，执行上下文说起](https://github.com/cumt-robin/mindmap-fe/blob/master/posts/javascript/closure.md)
