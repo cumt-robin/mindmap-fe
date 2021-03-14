@@ -2,7 +2,7 @@
  * @Author: 蒋文斌
  * @Date: 2021-03-14 15:14:16
  * @LastEditors: 蒋文斌
- * @LastEditTime: 2021-03-14 18:06:27
+ * @LastEditTime: 2021-03-14 18:50:27
  * @Description: 自动生成
  */
 
@@ -30,7 +30,7 @@ var fib = function(n) {
  */
 var fib = function(n) {
     function fibInner(n, a1, a2) {
-        return n === 0 ? a1 : fibInner(n - 1, a2, a1 + a2)
+        return n === 0 ? a1 : fibInner(n - 1, a2, (a1 + a2) % (1e9+7))
     }
     return fibInner(n, 0, 1)
 };
