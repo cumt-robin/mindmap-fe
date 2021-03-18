@@ -7,8 +7,12 @@ class Stack {
         this.list = []
     }
 
-    get length() {
+    get size() {
         return this.list.length;
+    }
+
+    empty() {
+        return this.size === 0
     }
 
     push(val) {

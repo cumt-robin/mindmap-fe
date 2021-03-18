@@ -1,14 +1,17 @@
 
 // https://leetcode-cn.com/problems/valid-parentheses/
 
-// 用数组模拟一个栈的结构
 class Stack {
     constructor() {
         this.list = []
     }
 
-    get length() {
+    get size() {
         return this.list.length;
+    }
+
+    empty() {
+        return this.size === 0
     }
 
     push(val) {
