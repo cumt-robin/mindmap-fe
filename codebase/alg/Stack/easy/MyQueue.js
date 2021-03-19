@@ -31,7 +31,8 @@ class Stack {
  * Initialize your data structure here.
  */
 var MyQueue = function() {
-
+    this.stack1 = new Stack();
+    this.stack2 = new Stack();
 };
 
 /**
@@ -40,7 +41,7 @@ var MyQueue = function() {
  * @return {void}
  */
 MyQueue.prototype.push = function(x) {
-
+    this.stack1.push(x)
 };
 
 /**
@@ -48,7 +49,12 @@ MyQueue.prototype.push = function(x) {
  * @return {number}
  */
 MyQueue.prototype.pop = function() {
-
+    if (this.stack2.empty()) {
+        while(!this.stack1.empty()) {
+            this.stack2.push(this.stack1.pop())
+        }
+    }
+    return this.stack2.pop();
 };
 
 /**
@@ -56,7 +62,12 @@ MyQueue.prototype.pop = function() {
  * @return {number}
  */
 MyQueue.prototype.peek = function() {
-
+    if (this.stack2.empty()) {
+        while(!this.stack1.empty()) {
+            this.stack2.push(this.stack1.pop())
+        }
+    }
+    return this.stack2.peek();
 };
 
 /**
@@ -64,7 +75,7 @@ MyQueue.prototype.peek = function() {
  * @return {boolean}
  */
 MyQueue.prototype.empty = function() {
-
+    return this.stack1.empty() && this.stack2.empty()
 };
 
 /**
