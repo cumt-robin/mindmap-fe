@@ -2,7 +2,7 @@
  * @Author: 蒋文斌
  * @Date: 2021-03-20 21:28:55
  * @LastEditors: 蒋文斌
- * @LastEditTime: 2021-03-20 21:40:29
+ * @LastEditTime: 2021-03-20 21:46:20
  * @Description: 自动生成
  */
 
@@ -35,6 +35,8 @@ class Stack {
 }
 
 /**
+ * 遍历字符串，需要与栈顶元素比较，如果不相等但是通过toLowerCase()转换后相等，说明是需要被整理的，此时出栈即可；否则就入栈。
+ * 最后把栈pop出来作为整理后的字符串结果，注意拼接的时候是在左侧拼接，因为入栈和出栈的顺序反了。
  * @param {string} s
  * @return {string}
  */
