@@ -1,43 +1,46 @@
+/*
+ * @Author: 蒋文斌
+ * @Date: 2020-11-09 14:42:18
+ * @LastEditors: 蒋文斌
+ * @LastEditTime: 2021-03-23 11:09:22
+ * @Description: 自动生成
+ */
 // 观察者
 class Observer {
-    /**
-     * 构造器
-     * @param {Function} cb 回调函数，收到目标对象通知时执行
-     */
-    constructor(cb){
-        if (typeof cb === 'function') {
-            this.cb = cb
-        } else {
-            throw new Error('Observer构造器必须传入函数类型！')
-        }
+    static autoIncreaseId = 1
+
+    constructor(callback) {
+        this.id = Observer.autoIncreaseId++;
+        this.callback = callback
     }
-    /**
-     * 被目标对象通知时执行
-     */
-    update() {
-        this.cb()
+
+    // 暴露一个接口，让主题去调用，当然命名应该是约定好的
+    complete(...args) {
+        this.callback(...args);
     }
 }
 
-// 目标对象
+// 主题
 class Subject {
-    constructor() {
-        // 维护观察者列表
-        this.observerList = []
+    constructor(name) {
+        this.name = name;
+        this.observerList = [];
     }
-    /**
-     * 添加一个观察者
-     * @param {Observer} observer Observer实例
-     */
+
     addObserver(observer) {
         this.observerList.push(observer)
     }
-    /**
-     * 通知所有的观察者
-     */
-    notify() {
+
+    removeObserver(observer) {
+        const index = this.observerList.findIndex(item => item.id === observer.id)
+        if (index !== -1) {
+            this.observerList.splice(index, 1)
+        }
+    }
+
+    notify(...args) {
         this.observerList.forEach(observer => {
-            observer.update()
+            observer.complete(...args);
         })
     }
 }

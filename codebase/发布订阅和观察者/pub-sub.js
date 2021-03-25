@@ -1,3 +1,10 @@
+/*
+ * @Author: 蒋文斌
+ * @Date: 2020-11-09 14:42:18
+ * @LastEditors: 蒋文斌
+ * @LastEditTime: 2021-03-23 11:10:21
+ * @Description: 自动生成
+ */
 class PubSub {
     constructor() {
         // 维护事件及订阅者
@@ -52,6 +59,7 @@ class PubSub {
         }
     }
 }
+
 // 创建发布订阅调度中心实例
 const pubSub = new PubSub()
 // 注册一个chifan事件订阅者
