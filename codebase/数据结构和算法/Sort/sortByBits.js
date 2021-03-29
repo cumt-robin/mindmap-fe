@@ -26,5 +26,8 @@ function getCountOfOneInBinary(num) {
  * @return {number[]}
  */
 var sortByBits = function(arr) {
-
+    for (let i = arr.length - 1; i >= 0; --i) {
+        const element = arr[i];
+        const count = getCountOfOneInBinary(element)
+    }
 };
