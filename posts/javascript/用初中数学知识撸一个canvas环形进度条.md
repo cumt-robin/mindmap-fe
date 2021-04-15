@@ -449,6 +449,11 @@ animateDrawArc(canvas, ctx, startDeg, endDeg, nextDeg, step) {
 
 ![v1.4.0版本效果](https://qncdn.wbjiang.cn/v1.4.0%E6%95%88%E6%9E%9C%E5%9B%BE.gif)
 
+------
+**2021年04月04日更新**
+
+1. 支持自动检测DPR，解决高清屏模糊等问题
+
 # 结语
 
 写完这个组件有让我感觉到，程序员最终不是输给了代码和技术的快速迭代，而是输给了自己的逻辑思维能力和数学功底。就[vue-awesome-progress]( https://github.com/cumt-robin/vue-awesome-progress )这个组件而言，根据这个思路，我们也能迅速开发出适用于`React`，`Angular`以及其他框架生态下的组件。工作三年有余，接触了不少框架和技术，经历了`MVVM`，`Hybrid`，`小程序`，`跨平台`，`大前端`，` serverless `的大火，也时常感慨“学不动了”，在这个快速演进的代码世界里常常感到失落。好在自己还没有丢掉分析问题的能力，而不仅仅是调用各种`API`和插件，这可能是程序员最宝贵的财富吧。前路坎坷，我辈当不忘初心，愿你出走半生，归来仍是少年！
