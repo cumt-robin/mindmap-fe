@@ -24,7 +24,7 @@ function insertionSort(a) {
         for (let j = m - 1; j >= 0; j--) {
             const compareOne = sortedArr[j];
             if (toInsertOne >= compareOne) {
-                sortedArr.splice(j, 0, toInsertOne);
+                sortedArr.splice(j + 1, 0, toInsertOne);
                 break;
             }
         }
@@ -45,14 +45,14 @@ function insertionSort(a) {
         let j = i - 1;
         for (; j >= 0; j--) {
             if (a[j] > value) {
-                // 如果比待插入的元素大，就往后面挪
+                // 如果大于待插入的元素，就往后面挪
                 a[j + 1] = a[j];
             } else {
-                // 如果遇到小于或等于待插入元素的，直接break
+                // 如果遇到小于或等于待插入元素的，就说明找到位置了
                 break;
             }
         }
-        // j + 1是留出来的坑位，用于赋值
+        // break出循环后，最后一个 j-- 不会执行，所以 j + 1 就是留出来的坑位，用于赋值
         a[j + 1] = value;
     }
     return a
