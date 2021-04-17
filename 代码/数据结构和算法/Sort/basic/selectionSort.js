@@ -26,4 +26,5 @@
         a[index] = a[i];
         a[i] = min;
     }
+    return a;
 }

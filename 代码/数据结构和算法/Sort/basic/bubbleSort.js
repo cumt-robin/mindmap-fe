@@ -25,4 +25,5 @@ function bubbleSort(a) {
             }
         }
     }
+    return a;
 }
