@@ -1,5 +1,7 @@
 虽然**Promise**是开发过程中使用非常频繁的一个技术点，但是它的一些细节可能很多人都没有去关注过。我们都知道，`.then`, `.catch`, `.finally`都可以链式调用，其本质上是因为返回了一个新的**Promise**实例，而这些**Promise**实例现在的状态是什么或者将来会变成什么状态，很多人心里可能都没个底。我自己也意识到了这一点，于是我通过一些代码试验，发现了一些共性。如果您对这块内容还没有把握，不妨看看。
 
+<!-- more -->
+
 阅读本文前，您应该对**Promise**有一些基本认识，比如：
 
 - `Promise`有`pending`, `fulfilled`, `rejected`三种状态，其决议函数`resolve()`能将`Promise`实例的状态由`pending`转为`fulfilled`，其决议函数`reject()`能将`Promise`实例的状态由`pending`转为`rejected`。
@@ -22,6 +24,7 @@ p.then(onFulfilled[, onRejected]);
 ```javascript
 new Promise((resolve, reject) => {
     resolve(1)
+    // reject(2)
 }).then(value => {
     console.log('resolution occurred, and the value is: ', value)
 }, reason => {
@@ -72,11 +75,15 @@ new Promise((resolve, reject) => {
 ```javascript
 new Promise((resolve, reject) => {
     resolve(1)
+    // reject(2)
 }).then(value => {
     console.log('resolution occurred, and the value is: ', value)
-    return Promise.resolve('a fulfilled promise')
+    // return Promise.resolve('a fulfilled promise')
+    return Promise.reject('a rejected promise')
 }, reason => {
     console.log('rejection occurred, and the reason is: ', reason)
+    return Promise.resolve('a fulfilled promise')
+    // return Promise.reject('a rejected promise')
 }).then(value => {
     console.log('resolution of the returned promise occurred, and the value is: ', value)
 }, reason => {
@@ -151,6 +158,17 @@ new Promise((resolve, reject) => {
 
 - 其他情况下，`.catch`返回的`Promise`实例的状态将是`fulfilled`。
 
+# then, catch 小结
+
+综合以上来看，不管是`.then(onFulfilled, onRejected)`，还是`.catch(onRejected)`，它们返回的`Promise`实例的状态都取决于回调函数是否抛出异常，以及返回值是什么。
+
+- 如果回调函数的返回值是一个状态为`rejected`的`Promise`实例，那么`.then`, `.catch`返回的`Promise`实例的状态就是`rejected`。
+
+- 如果回调函数的返回值是一个还未决议的`Promise`实例`p2`，那么`.then`, `.catch`返回的`Promise`实例`p1`的状态取决于`p2`的决议结果。
+
+- 如果回调函数中抛出了异常，那么`.then`, `.catch`返回的`Promise`实例的状态就是`rejected`，并且`reason`是所抛出异常的对象`e`。
+
+- 其他情况下，`.then`, `.catch`返回的`Promise`实例的状态将是`fulfilled`。
 # 最后看看finally
 
 不管一个`Promise`的状态是`fulfilled`还是`rejected`，传递到`finally`方法的回调函数`onFinally`都会被执行。我们可以把一些公共行为放在`onFinally`执行，比如把`loading`状态置为`false`。
@@ -187,17 +205,12 @@ new Promise((resolve, reject) => {
 })
 ```
 
-# then, catch, finally小结
+经过测试，可以发现，不管当前Promise的状态是`fulfilled`还是`rejected`，只要在`onFinally`中没有发生以下任何一条情况，`finally`方法返回的新的`Promise`实例的状态就会与当前Promise的状态保持一致！这也意味着即使在`onFinally`中返回一个状态为`fulfilled`的`Promise`也不能阻止新的`Promise`实例采纳当前`Promise`的状态或值！
 
-综合以上来看，不管是`.then(onFulfilled, onRejected)`，还是`.catch(onRejected)`，或者是`.finally(onFinally)`，它们返回的`Promise`实例的状态都取决于回调函数是否抛出异常，以及返回值是什么。
+- 返回一个状态为或将为`rejected`的Promise
+- 抛出错误
 
-- 如果回调函数的返回值是一个状态为`rejected`的`Promise`实例，那么`.then`, `.catch`或`.finally`返回的`Promise`实例的状态就是`rejected`。
-
-- 如果回调函数的返回值是一个还未决议的`Promise`实例`p2`，那么`.then`, `.catch`或`.finally`返回的`Promise`实例`p1`的状态取决于`p2`的决议结果。
-
-- 如果回调函数中抛出了异常，那么`.then`, `.catch`或`.finally`返回的`Promise`实例的状态就是`rejected`，并且`reason`是所抛出异常的对象`e`。
-
-- 其他情况下，`.then`, `.catch`或`.finally`返回的`Promise`实例的状态将是`fulfilled`。
+总的来说，在`finally`情况下，`rejected`优先！
 
 # 如何理解then中抛出异常后会触发随后的catch
 
@@ -243,9 +256,3 @@ jQuery.fn.css = function() {
 # 感谢阅读
 
 本文主要是参考了**MDN**和《你不知道的JavaScript（下卷）》上关于Promise的知识点，简单分析了`.then`, `.catch`, `.finally`中回调函数的不同行为对于三者返回的Promise实例的影响，希望对大家有所帮助。
-
-- 收藏吃灰不如现在就开始学习，奥利给！
-- 如果您觉得本文有所帮助，请留下您的点赞关注支持一波，谢谢！
-- 快关注公众号**前端司南**，与笔者一起交流学习吧！
-
-![公众号-前端司南](http://qncdn.wbjiang.cn/%E5%89%8D%E7%AB%AF%E5%8F%B8%E5%8D%97%E5%90%8D%E7%89%87%E5%B8%A6%E5%BE%AE%E4%BF%A1.png)

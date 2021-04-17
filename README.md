@@ -33,13 +33,13 @@
 ## javascript
 
 - [我以为我很懂Promise，直到我开始实现Promise/A+规范](https://juejin.cn/post/6937076967283884040)
-- [then, catch, finally如何影响返回的Promise实例状态](https://github.com/cumt-robin/mindmap-fe/blob/master/博客/javascript/promise_then_catch_finally.md)
-- [彻底搞懂闭包，柯里化，手写代码，金九银十不再丢分！](https://github.com/cumt-robin/mindmap-fe/blob/master/博客/javascript/function.md)
-- [解读闭包，这次从ECMAScript词法环境，执行上下文说起](https://github.com/cumt-robin/mindmap-fe/blob/master/博客/javascript/closure.md)
-- [写给自己的Object和Function的3个灵魂拷问](https://github.com/cumt-robin/mindmap-fe/blob/master/博客/javascript/写给自己的Object和Function的3个灵魂拷问.md)
-- [面试官真的会问：new的实现以及无new实例化](https://github.com/cumt-robin/mindmap-fe/blob/master/博客/javascript/new.md)
-- [「思维导图学前端 」初中级前端值得收藏的正则表达式知识点扫盲](https://github.com/cumt-robin/mindmap-fe/blob/master/博客/javascript/regexp.md)
-- [「思维导图学前端 」6k字一文搞懂Javascript对象，原型，继承](https://github.com/cumt-robin/mindmap-fe/blob/master/博客/javascript/object.md)
+- [then, catch, finally如何影响返回的Promise实例状态](https://juejin.cn/post/6877413454945189901)
+- [彻底搞懂闭包，柯里化，手写代码，金九银十不再丢分！](https://juejin.cn/post/6864378349512065038)
+- [解读闭包，这次从ECMAScript词法环境，执行上下文说起](https://juejin.cn/post/6858052418862235656)
+- [写给自己的Object和Function的3个灵魂拷问](https://juejin.cn/post/6854573208109056007)
+- [面试官真的会问：new的实现以及无new实例化](https://juejin.cn/post/6850037282319204360)
+- [「思维导图学前端 」初中级前端值得收藏的正则表达式知识点扫盲](https://juejin.cn/post/6850037267365855239)
+- [「思维导图学前端 」6k字一文搞懂Javascript对象，原型，继承](https://juejin.cn/post/6844904194097299463)
 - [千万别小看这些运算符背后的逻辑](https://github.com/cumt-robin/mindmap-fe/blob/master/博客/javascript/千万别小看这些运算符背后的逻辑.md)
 - [关于数据类型的一些小疑惑](https://github.com/cumt-robin/mindmap-fe/blob/master/博客/javascript/关于数据类型的一些小疑惑.md)
 - [js数据类型很简单，却也不简单](https://github.com/cumt-robin/mindmap-fe/blob/master/博客/javascript/js数据类型很简单，却也不简单.md)
@@ -63,6 +63,7 @@
 
 ## Vue
 
+- [一个透传技巧，治好了我的重度代码洁癖](https://juejin.cn/post/6939684549450268680)
 - [vue项目中引入iconfont](https://github.com/cumt-robin/mindmap-fe/blob/master/博客/Vue/vue项目中引入iconfont.md)
 - [vue全家桶版本升级排错](https://github.com/cumt-robin/mindmap-fe/blob/master/博客/Vue/vue全家桶版本升级排错.md)
 - [vue作用域插槽，你真的懂了吗](https://github.com/cumt-robin/mindmap-fe/blob/master/博客/Vue/vue作用域插槽你真的懂了吗.md)
@@ -97,11 +98,12 @@
 
 ## npm
 
+- [npm init @vitejs/app的背后，仅是npm CLI的冰山一角](https://juejin.cn/post/6950817077670182943)
 - [发布一个简单的npm包](https://github.com/cumt-robin/mindmap-fe/blob/master/博客/npm/发布一个简单的npm包.md)
 
 ## Git
 
-- [从亲身经历谈谈如何用Git分支解决项目生产实践中的痛点](https://github.com/cumt-robin/mindmap-fe/blob/master/博客/Git/从亲身经历谈谈如何用Git分支解决项目生产实践中的痛点.md)
+- [从亲身经历谈谈如何用Git分支解决项目生产实践中的痛点](https://juejin.cn/post/6870288138351493134)
 - [前端小微团队的gitlab实践](https://github.com/cumt-robin/mindmap-fe/blob/master/博客/Git/前端小微团队的gitlab实践.md)
 - [Git多个远程仓库不同步时的补救办法](https://github.com/cumt-robin/mindmap-fe/blob/master/博客/Git/Git多个远程仓库不同步时的补救办法.md)
 - [解决办公IP变化后git无法推送远程仓库的问题](https://github.com/cumt-robin/mindmap-fe/blob/master/博客/Git/解决办公IP变化后git无法推送远程仓库的问题.md)
@@ -109,6 +111,7 @@
 
 ## CD/CD
 
+- [花半天时间，轻松打造前端CI/CD工作流](https://juejin.cn/post/6944878021560139783)
 - [前端自动化部署的深度实践](https://github.com/cumt-robin/mindmap-fe/blob/master/博客/CI&CD/前端自动化部署的深度实践.md)
 - [自动化部署的一小步，前端搬砖的一大步](https://github.com/cumt-robin/mindmap-fe/blob/master/博客/CI&CD/自动化部署的一小步，前端搬砖的一大步.md)
 
