@@ -10,6 +10,7 @@
  * 选择排序：每一轮选出一个最小值，放在最左侧。和冒泡排序的不同点在于，每一轮最多换位一次。
  * 不稳定，可能存在等值元素相对位置变化的情况，比如 5 5 8 7 2
  * @param {Array} a 
+ * @returns {Array} a
  */
  function selectionSort(a) {
     const n = a.length;

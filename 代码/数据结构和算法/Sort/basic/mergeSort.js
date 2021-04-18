@@ -28,7 +28,8 @@ function merge(left, right) {
  * 归并排序，也可以理解为二分排序，也是用的分治思想，把一个数组分为长度尽可能相等的两部分，对子数组继续采用归并排序。
  * 当子数组不可再分时，需要合并数组，合并时，采用依次比较首位元素的方式得出结果。
  * 归并排序是稳定的，即使是分割再合并，等值元素的相对位置还是不会变化的。
- * @param {Array} arr 
+ * @param {Array} arr
+ * @returns {Array} result 已排序结果
  */
 function mergeSort(arr) {
     const len = arr.length
