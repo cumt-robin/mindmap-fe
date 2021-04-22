@@ -23,25 +23,23 @@ function binarySearch(arr, left, right, target) {
 }
 
 /**
- * 如果两数a, b之和是target，那么a, b肯定分别位于 target >> 1 两侧，并且 b < target
+ * 先确定一个值a，再从剩下的值里面二分查找target - a
  * @param {number[]} numbers
  * @param {number} target
  * @return {number[]}
  */
 var twoSum = function(numbers, target) {
-    // 首先利用二分找出区间。
-    const len = numbers.length;
-    let left = 0, right = len - 1;
-    const targetNearestIndex = binarySearch(numbers, left, right, target);
-    const halfValue = target >> 1;
-    const halfNearestIndex = binarySearch(numbers, left, targetNearestIndex, halfValue)
-    // 再从区间遍历
-    for (let i = 0; i <= halfNearestIndex; i++) {
-        const leftValue = numbers[i]
-        for (let j = halfNearestIndex + 1; j <= targetNearestIndex; j++) {
-            const rightValue = numbers[j];
-            if (leftValue + rightValue === target) {
-                return [i + 1, j + 1]
+    for (let i = 0, len = numbers.length; i < len - 1; i++) {
+        const b = target - numbers[i];
+        let left = i + 1, right = len - 1;
+        while(left <= right) {
+            const middle = (left + right) >> 1, middleValue = numbers[middle]
+            if (middle === b) {
+                return [i + 1, middle + 1]
+            } else if (middle < b) {
+                left = middle + 1;
+            } else {
+                right = middle - 1;
             }
         }
     }
