@@ -2,25 +2,11 @@
  * @Author: 蒋文斌
  * @Date: 2021-04-22 21:27:49
  * @LastEditors: 蒋文斌
- * @LastEditTime: 2021-04-22 22:15:27
+ * @LastEditTime: 2021-04-23 09:02:10
  * @Description: 自动生成
  */
 
 // https://leetcode-cn.com/problems/two-sum-ii-input-array-is-sorted/
-
-function binarySearch(arr, left, right, target) {
-    while(left <= right) {
-        const middle = (left + right) >> 1, middleValue = arr[middle], nextValue = arr[middle + 1]
-        if (middleValue <= target && nextValue > target) {
-            return middle;
-        } else if (middleValue < target) {
-            left = middle + 1;
-        } else {
-            right = middle - 1;
-        }
-    }
-    return right;
-}
 
 /**
  * 先确定一个值a，再从剩下的值里面二分查找target - a
@@ -34,9 +20,10 @@ var twoSum = function(numbers, target) {
         let left = i + 1, right = len - 1;
         while(left <= right) {
             const middle = (left + right) >> 1, middleValue = numbers[middle]
-            if (middle === b) {
+            if (middleValue === b) {
+                // 最终要返回的下标是从1开始的，而我们遍历是从0开始，所以这里+1
                 return [i + 1, middle + 1]
-            } else if (middle < b) {
+            } else if (middleValue < b) {
                 left = middle + 1;
             } else {
                 right = middle - 1;
