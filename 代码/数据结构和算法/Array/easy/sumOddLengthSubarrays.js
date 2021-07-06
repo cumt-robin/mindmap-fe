@@ -3,7 +3,7 @@
  * @Date: 2021-03-11 13:11:34
  * @LastEditors: 蒋文斌
  * @LastEditTime: 2021-03-11 21:41:27
- * @Description: 自动生成
+ * @Description: 所有奇数长度子数组的和
  */
 
 // https://leetcode-cn.com/problems/sum-of-all-odd-length-subarrays/

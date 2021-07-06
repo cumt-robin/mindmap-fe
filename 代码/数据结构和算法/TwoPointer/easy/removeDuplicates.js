@@ -2,29 +2,22 @@
 // https://leetcode-cn.com/problems/remove-duplicates-from-sorted-array/
 
 /**
- * 用快慢指针来解决它
- * @param {*} nums 
+ * 用两个指针 i 和 j，一个指针 i 往前面走，每次循环都与前一个元素对比，遇到不重复的元素时，通过另一个指针 j 重设 nums[j] 的值为 nums[i]，然后 j 自增 1；其实 j 就代表不重复的数量。
+ * 最后注意把 nums.length 设为 j，裁剪掉后面的部分。
+ * @param {number[]} nums
+ * @return {number}
  */
-var removeDuplicates = function(nums) {
+ var removeDuplicates = function(nums) {
     const len = nums.length;
-    if (len === 0) {
-        return 0
-    }
-    let fast = 1, slow = 1;
-    while(fast < len) {
-        // fast每次都+1，slow只在出现差异值时+1，用于统计不同值的数量
-        if (nums[fast] !== nums[fast - 1]) {
-            // 用slow来做没有重复的数组赋值
-            nums[slow] = nums[fast]
-            ++slow;
+    let j = 0;
+    for (let i = 0; i < len; ++i) {
+        if (nums[i] !== nums[i - 1]) {
+            nums[j++] = nums[i];
         }
-        ++fast;
     }
-    // 最终通过改变数组length来实现裁剪
-    nums.length = slow;
-    // 返回长度
-    return slow;
-}
+    nums.length = j;
+    return j;
+};
 
 /**
  * 删除有序数组中的重复项，要求原地修改，不另外使用数组空间

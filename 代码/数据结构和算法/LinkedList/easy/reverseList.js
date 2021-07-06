@@ -53,8 +53,8 @@ var reverseList = function(head) {
     var curr = head;
     while(curr) {
         var next = curr.next;
+        curr.next = prev;
         prev = curr;
-        curr.next = prev
         curr = next;
     }
     return prev;
